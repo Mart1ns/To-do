@@ -1,0 +1,68 @@
+body{
+    background-color: #e1baef;
+    font-weight: bold;
+}
+
+.mainmenubtn {
+    background-color: #cbabe1;
+    font-weight: bold;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+    margin-left: 20px;
+    width: 300px;
+}
+.mainmenubtn:hover {
+    background-color: whitesmoke;
+
+    color:#e1baef ;
+    font-weight: bold;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+.dropdown-child {
+    text-align: center; /*centralizando o icon*/
+    display: none;
+    font-weight: bold;
+    background-color: #cbabe1;
+    border-radius: 10px;
+    min-width: 200px;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: left;
+}
+.dropdown-child a {
+    color: whitesmoke;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+#FormularioTarefa{
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+    margin: 0 auto;
+
+    row-gap: 10px;
+    font-weight: bold;
+    justify-content: center;
+}
+#FormularioTarefa button{
+    width: 80px;
+    text-align: center;
+}
+
+#FormularioTarefa input, select{
+    border-radius: 10px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/estilização/index.css">
+    <script src="/scripts/main.js"></script>
+    <title>To-Do</title>
+</head> 
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="mainmenubtn">Menu</button>
+            <div class="dropdown-child">
+              <a href="/progresso.html"><img width="74" height="74" src="https://img.icons8.com/3d-fluency/94/combo-chart.png" alt="combo-chart"/></a>
+            </div>
+          </div>
+    </header>
+    <form id="FormularioTarefa">
+    <label for="nomeTarefa">Nome da tarefa:</label>
+    <input type="text" id="nomeTarefa">
+    
+    <label for="prioridadeTarefa">Defina a prioridada da tarefa</label>
+    
+    <select id="prioridade">
+        <option value="baixa">Baixa</option>
+        <option value="media">Média</option>
+        <option value="alta">Alta</option>
+    </select>
+    <button onclick="adicionar()">Adicionar</button>
+    </form>
+
+    <ul id="listaDeTarefa"></ul>
+</body>
+</html>
